@@ -1,0 +1,38 @@
+
+  
+.row {
+    background-color: black;
+    margin:9px;
+    color: white;
+    
+  }
+  
+.rowPosters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 9px;
+    scrollbar-width: none; /* For Firefox */
+   
+  }
+
+ 
+  
+.rowPoster {
+    width: 100%;
+    max-height: 150px;
+    margin-right: 10px ;
+    object-fit: contain;
+    transition: transform 450ms;
+    border-radius: 10px;
+}
+  
+.rowPoster:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .rowPosterLarge{
+    max-height: 250px;
+  }
+  

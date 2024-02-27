@@ -1,0 +1,33 @@
+
+
+
+.search_results {
+    display: flex;
+    gap: 20px;
+    margin-top: 75px;
+    overflow-x: auto;
+    scrollbar-width: none /* Allow horizontal scrolling if needed */
+}
+
+.movie_card {
+    border-radius: 8px;
+
+    height: 200px; /* Adjusted height for a better visual balance */
+    flex-shrink: 0; /* Prevent flex items from shrinking too much */
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
+    transition: transform 0.2s ease-in-out; /* Add a subtle transform animation on hover */
+    
+}
+
+.movie_card:hover {
+    transform: scale(1.1); /* Enlarge the card slightly on hover */
+}
+
+.movie-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+   
+}

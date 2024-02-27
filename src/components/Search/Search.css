@@ -1,0 +1,76 @@
+/* .search-input{
+    box-sizing: border-box;
+    padding: 10px 40px 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    border: 2px solid white;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+   
+    height: 30px;
+    position: relative;
+}
+
+.search-button{
+    
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%);
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.cancel-button{
+    margin-left: -25px;
+    border: none;
+    color: white;
+    background-color: transparent;
+} */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    box-sizing: border-box;
+    padding: 10px 40px 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: 2px solid white;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -100%);
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel-button {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 20px; /* Adjust this value based on your design */
+    transform: translate(0, -100%);
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
