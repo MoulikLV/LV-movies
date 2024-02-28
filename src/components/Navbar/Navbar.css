@@ -4,7 +4,7 @@
     width: 100%;
     height: 70px;
     display: flex;
-    background-color: #1111;
+    background-color: black;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
@@ -30,8 +30,8 @@
 }
 
 .nav_link{
-    color: white;
-    margin-right: 20px;
+    color: red;
+    margin-right: 15px;
     cursor: pointer;
    
     

@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Navbar.css"
 import Search from '../Search'
+import { BrowserRouter ,Link,Route,Routes} from 'react-router-dom'
+
+
 
 function Navbar() {
   return (
@@ -12,14 +15,20 @@ function Navbar() {
         
 
       </div>
+     
      <ul className='nav_links'>
       <li className='nav_link'>Home</li>
-      <li className='nav_link'>Tv shows</li>
+      <li className='nav_link' >Tv shows</li>
       <li className='nav_link'>Movies</li>
       <li className='nav_link'>Latest</li>
 
       <li className='nav_link'>My list</li>
-     </ul>
+     </ul> 
+      
+     
+
+   
+    
      <Search/>
     
       

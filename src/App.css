@@ -1,6 +1,8 @@
-*{
-  margin: 10px;
-  background-color: black;
+body{
+  margin-right: 10px;
+  background-color:black;
+  margin-left: 5px;
+  margin: 30px;
 }
 
 .App {

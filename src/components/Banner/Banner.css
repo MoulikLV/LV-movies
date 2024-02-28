@@ -13,7 +13,7 @@
   overflow: hidden;
   margin-top: 30px;
   background-color: transparent;
-  border-radius: 15px
+  border-radius: 20px
  
 }
 
@@ -25,13 +25,13 @@
     right: 30px;
     width: 50px;
     height: 50px;
-    
+    background-color: transparent;
     border:  transparent;
     border-radius: 50%; /* Set to 50% to create a circle */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+   ;
    
     cursor: pointer; /* Add cursor style for better user interaction */
 }
@@ -41,7 +41,7 @@
 }
 
 .mute-btn i {
-    font-size: 20px; /* Adjust the icon size as needed */
-    color: white; /* Set the color to the desired icon color */
+    font-size: 50px; /* Adjust the icon size as needed */
+     /* Set the color to the desired icon color */
 }
 

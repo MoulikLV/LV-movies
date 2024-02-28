@@ -7,6 +7,10 @@ import Footer from './components/Footer';
 import Main from './components/Main';
 import { SearchProvider } from './Context/Searchcontext';
 import Searchresults from './components/Searchresults';
+import { Routes,Route } from 'react-router-dom';
+import Home from './components/Pages/Home/Home';
+import Search from './components/Pages/Search/Search';
+import Notfound from './components/Pages/Ntfound/Notfound';
 
 
 function App() {
@@ -24,27 +28,29 @@ function App() {
 
   return (
     <>
-     
-     <SearchProvider>
-        <Navbar/>
-        <Main/> 
-        <Searchresults/>
-       
-     </SearchProvider>
 
-   
-      
+      <SearchProvider>
+       <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/search/:query' element={<Search/>}/>
+        <Route path='*'  element={<Notfound/>}/>
+       </Routes>
+
+      </SearchProvider>
+
+
+
 
       {/* {rowsData.map((row,index)=>{
         return <Row key={index} isLargeRow title={row.title} fetchURL={row.fetchURL}/>
       })} */}
-    
-     
-      
-      
-      
-      
-  
+
+
+
+
+
+
+
 
     </>
   );

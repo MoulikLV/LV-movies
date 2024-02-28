@@ -17,7 +17,7 @@
     position: relative;
     overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
     transition: transform 0.2s ease-in-out; /* Add a subtle transform animation on hover */
-    
+    cursor: pointer;
 }
 
 .movie_card:hover {

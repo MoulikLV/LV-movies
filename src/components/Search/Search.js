@@ -3,12 +3,16 @@ import React from 'react'
 import { useState,useContext } from 'react'
 import requests from '../Api/Requests'
 import "./Search.css"
+import {useNavigate} from "react-router-dom"
+
 
 import { useSearch } from '../../Context/Searchcontext'
 
 
 
 function Search() {
+
+  const navigate=useNavigate()
    
   const {search,flag,query,setQuery,setFlag,setResults}=useSearch()
 
@@ -21,6 +25,9 @@ function Search() {
     const handleSubmit=()=>{
         if(query){
            search()
+           const encodedquery=encodeURIComponent(query)
+           
+           navigate(`/search/${encodeURIComponent(query)}`)
         }
        
     }
@@ -29,6 +36,7 @@ function Search() {
         setQuery("")
         setFlag(false)
         setResults([])
+        navigate('/')
     }
   return (
     <div className='search-form'>
